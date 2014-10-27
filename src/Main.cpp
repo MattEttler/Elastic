@@ -15,4 +15,3 @@ int main()
 		std::cout << "error: " << e << std::endl;
 	}
 }
-

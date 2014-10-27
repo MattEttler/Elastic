@@ -91,6 +91,8 @@ void Engine::LoadTextures()
 
 void Engine::RenderFrame()
 {
+    sf::Time frameTime = frameClock.restart();
+
 	Tile* tile = Engine::tileTypes[0];
 
 	window->clear();
@@ -111,7 +113,7 @@ void Engine::RenderFrame()
 		}
 	}
 
-    player->Draw(player->x - camera->x, player->y - camera->y, window, tileScale/2);
+    player->Draw(player->x - camera->x, player->y - camera->y, window, frameTime);
 
     //Flips the display
 	window->display();

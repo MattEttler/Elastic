@@ -18,7 +18,8 @@ Mob::~Mob()
 {
 }
 
-void Mob::Draw(int xOffset, int yOffset, sf::RenderWindow* rw, float scale){
+void Mob::Draw(int xOffset, int yOffset, sf::RenderWindow* rw, float scale)
+{
     baseSprite.setPosition(xOffset, yOffset);
     baseSprite.setScale(scale, scale);
     rw->draw(baseSprite);

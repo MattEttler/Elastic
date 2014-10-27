@@ -14,6 +14,7 @@ class Engine
 private:
 	//SFML Render Window
 	sf::RenderWindow* window;
+    sf::Clock frameClock;
 	TextureManager* texturemanager;
 	Player* player;
 	sf::CircleShape circle;
